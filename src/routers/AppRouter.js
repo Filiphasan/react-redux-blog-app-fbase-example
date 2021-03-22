@@ -12,9 +12,9 @@ const AppRouter = () => {
         <BrowserRouter>
             <Header></Header>
             <Switch>
-                <Route path="/" component={HomePage} />
-                <Route path="/blogs" component={BlogListPage} />
-                <Route path="/blogs:/id" component={BlogDetailsPage} />
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/blogs" component={BlogListPage} />
+                <Route path="/blogs/:id" component={BlogDetailsPage} />
                 <Route path="/contact" component={ContactPage} />
                 <Route component={NotFoundPage} />
             </Switch>
